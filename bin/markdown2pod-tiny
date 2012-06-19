@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+use 5.010;
+use strict;
+use warnings;
+
+use Markdown::To::POD::Tiny qw(markdown2pod);
+
+undef $/;
+print markdown2pod($_) while <>;
